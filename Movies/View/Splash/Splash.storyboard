@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MZc-mQ-ypF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="QcX-dr-tGa">
+            <objects>
+                <viewController restorationIdentifier="SplashViewController" storyboardIdentifier="SplashViewController" id="MZc-mQ-ypF" customClass="SplashViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7mg-Jo-9TK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="99u-RC-Kcn">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="99u-RC-Kcn" secondAttribute="height" multiplier="1:1" id="gYn-qz-v1n"/>
+                                    <constraint firstAttribute="height" constant="200" id="p5O-FT-Go0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jk-7v-oRX">
+                                <rect key="frame" x="86.5" y="134" width="202.5" height="69.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.1176470588" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9jk-7v-oRX" firstAttribute="centerX" secondItem="7mg-Jo-9TK" secondAttribute="centerX" id="4ib-we-0Ut"/>
+                            <constraint firstItem="99u-RC-Kcn" firstAttribute="centerY" secondItem="7mg-Jo-9TK" secondAttribute="centerY" id="KCh-Ww-Icy"/>
+                            <constraint firstItem="99u-RC-Kcn" firstAttribute="top" secondItem="9jk-7v-oRX" secondAttribute="bottom" constant="30" id="ui7-Uh-Zp7"/>
+                            <constraint firstItem="99u-RC-Kcn" firstAttribute="centerX" secondItem="7mg-Jo-9TK" secondAttribute="centerX" id="zZh-iA-4Hv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QLD-WK-nr2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDD-IT-rxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="84" height="84"/>
+    </resources>
+</document>

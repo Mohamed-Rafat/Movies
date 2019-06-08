@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="MovieViewCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="202.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41U-o7-cir" customClass="UIViewX" customModule="Movies" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="202.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3HF-F2-PbI" userLabel="Root Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="405" height="202.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defalult_thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="eCm-ak-9aD">
+                                        <rect key="frame" x="0.0" y="0.0" width="202.5" height="202.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pf2-o0-hEe">
+                                        <rect key="frame" x="210.5" y="0.0" width="194.5" height="202.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DuV-V6-uoY">
+                                                <rect key="frame" x="0.0" y="52" width="144.5" height="98.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEq-RI-G0l" customClass="UILabelX" customModule="Movies" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3H-36-Oe0" customClass="UILabelX" customModule="Movies" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="35.5" width="144.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-lh-QKz" customClass="UILabelX" customModule="Movies" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="71" width="144.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-0K-91g" customClass="LoveButton" customModule="Movies" customModuleProvider="target">
+                                                <rect key="frame" x="144.5" y="76.5" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="8Y1-ij-uVi">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" secondItem="7Av-0K-91g" secondAttribute="height" multiplier="1:1" id="lxI-X4-rvd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="loveImage" value="icon_fav_active"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="unLoveImage" value="icon_fav_inactive"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfHearts">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onFavBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bgp-7d-i2i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eCm-ak-9aD" firstAttribute="width" secondItem="3HF-F2-PbI" secondAttribute="width" multiplier="1:2" id="DJ4-nT-vbm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3HF-F2-PbI" secondAttribute="trailing" id="O9A-Aj-3yM"/>
+                            <constraint firstItem="3HF-F2-PbI" firstAttribute="leading" secondItem="41U-o7-cir" secondAttribute="leading" id="RhM-MC-E3U"/>
+                            <constraint firstItem="3HF-F2-PbI" firstAttribute="top" secondItem="41U-o7-cir" secondAttribute="top" id="epa-NR-szq"/>
+                            <constraint firstAttribute="bottom" secondItem="3HF-F2-PbI" secondAttribute="bottom" id="lZu-B9-870"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="41U-o7-cir" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7bN-XS-q67"/>
+                    <constraint firstAttribute="trailing" secondItem="41U-o7-cir" secondAttribute="trailing" id="8sm-0N-duc"/>
+                    <constraint firstAttribute="bottom" secondItem="41U-o7-cir" secondAttribute="bottom" id="NGe-Wl-3LJ"/>
+                    <constraint firstItem="41U-o7-cir" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ksS-h6-7AN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="FavBtn" destination="7Av-0K-91g" id="C7Q-im-oy5"/>
+                <outlet property="movieGenreLbl" destination="n2C-lh-QKz" id="WCl-qv-6Lk"/>
+                <outlet property="movieImgView" destination="eCm-ak-9aD" id="6Im-7b-crB"/>
+                <outlet property="movieNameLbl" destination="BEq-RI-G0l" id="yej-fj-HRC"/>
+                <outlet property="movieYearLbl" destination="b3H-36-Oe0" id="59r-tx-Dw2"/>
+            </connections>
+            <point key="canvasLocation" x="172.55859375" y="183.38213762811125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defalult_thumbnail" width="2560" height="1440"/>
+        <image name="icon_fav_active" width="28.5" height="28.5"/>
+        <image name="icon_fav_inactive" width="28.5" height="28.5"/>
+    </resources>
+</document>
